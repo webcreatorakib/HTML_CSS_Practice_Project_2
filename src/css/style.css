@@ -50,6 +50,7 @@ ul{
     max-width: 75%;
     max-width:1440px;
     margin:auto;
+    padding:0 20px;
 }
 /* ____________Here is header section_____________ */
 header{
@@ -115,92 +116,97 @@ header .banner .banner-img img{
 #features .features-description{
     width:90%
 }
-
-
-
-
-
-
-/* __________Responsive for middle device ____________*/
-@media screen and (min-width:576px) and (max-width:960px){
-    h1{
-        font-size: 3.5rem;
-    }
-    h2{
-        font-size:2rem;
-    }
-    .container{
-        padding:0 20px;
-    }
-    /* ________Here is header_______ */
-    header nav ul{
-        gap:20px
-    }
-    header .banner{
-        margin-top:45px;
-    }
-    header .banner .banner-text {
-        width: 80%;
-    }
-    /* ________Here is features style________ */
-    #features {
-        padding: 85px 0 85px 0;
-    }
-    .features-elements {
-        flex-direction: column-reverse;
-    }
-    #features .img-gallery{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-    }
+/* _________Here is love section style___________ */
+#love{
+    padding-bottom:150px;
+}
+#love .love-elements{
+    display: flex;
+    gap:100px;
+}
+#love .love-content{
+    width:40%;
+}
+#love .love-title{
+    width:70%;
+    padding-left:21px;
+    border-left:5px solid #FF900E;
+}
+#love .love-card{
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding:20px;
+    margin-bottom:20px;
+}
+#love .card-description{
+    margin: 10px 0;
+}
+#love .experience{
+    background-color: #FF900E;
+    color:#fff;
+    padding:40px;
+    text-align: center;
+    width:300px;
+    border-radius: 8px;
+    position: relative;
+    left: -82px;
+    bottom: 80px;
+}
+#love .love-img h2{
+    color:#fff;
+}
+#love .love-img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* __________Here is fact style________ */
+#fact {
+    padding-bottom:100px;
+}
+#fact .fact-description{
+    margin: 12px 0;
+    width:40%;
+}
+#fact .fact-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:50px;
+    margin-top: 100px;
+    padding:0 80px;
+}
+#fact .fact-card h2{
+    color:#424242;
+    font-weight: 600;
+    margin: 15px 0;
+}
+#fact .fact-card h4{
+    color:#727272;
+}
+#fact .fact-card-item{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding:35px;
 }
 
-/* _________Responsive for small device__________ */
-@media screen and (max-width:576px) {
-    h1{
-        font-size: 2.8rem;
-    }
-    h2{
-        font-size:2.2rem;
-    }
-    .btn {
-        font-size: 1rem;
-        padding: 15px 10px;
-        width: 160px;
-    }
-    .container{
-        padding:0 20px;
-    }
-    header nav{
-        text-align: center;
-        flex-direction: column;
-    }
-    header nav ul{
-        gap:20px;
-    }
-    header nav h2{
-        margin-bottom:25px;
-    }
-    header .banner{
-        margin-top:25px;
-        flex-direction: column-reverse;
-    }
-    header .banner .banner-text{
-        width:100%;
-    }
-        /* ________Here is features style________ */
-        #features {
-            padding: 85px 0 85px 0;
-        }
-        .features-elements {
-            flex-direction: column;
-            padding:0;
-        }
-        #features .img-gallery{
-            grid-template-columns: repeat(1,1fr);
-            grid-template-rows: repeat(1,1fr);
-        }
-        #features .features-description {
-            width: 100%;
-        }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

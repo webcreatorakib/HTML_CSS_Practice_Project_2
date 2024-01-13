@@ -1,0 +1,131 @@
+/* __________Responsive for middle device ____________*/
+@media screen and (min-width:576px) and (max-width:960px){
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size:2rem;
+    }
+    .container{
+        padding:0 20px;
+    }
+    /* ________Here is header_______ */
+    header nav ul{
+        gap:20px
+    }
+    header .banner{
+        margin-top:45px;
+    }
+    header .banner .banner-text {
+        width: 80%;
+    }
+    /* ________Here is features style________ */
+    #features {
+        padding: 85px 0 85px 0;
+    }
+    .features-elements {
+        flex-direction: column-reverse;
+    }
+    #features .img-gallery{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    /* _______Here is love section__________ */
+    #love {
+        padding-bottom: 0px;
+    }
+    #love .love-elements{
+        flex-direction: column;
+    }
+    #love .love-elements {
+        gap: 50px;
+    }
+    #love .love-content {
+       width: 100%;
+    }
+    #love .experience {
+        border-radius: 0px;
+        left: 0px;
+        bottom: 80px;
+    }
+    /* _________Here is fact section style__________ */
+    #fact .fact-description {
+        width: 100%;
+    }
+    #fact .fact-card{
+        grid-template-columns: repeat(2,1fr);
+        padding:0 40px;
+        margin-top: 60px;
+    }
+}
+/* _________Responsive for small device__________ */
+@media screen and (max-width:576px) {
+    h1{
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size:2.2rem;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 15px 10px;
+        width: 160px;
+    }
+    .container{
+        padding:0 20px;
+    }
+    header nav{
+        text-align: center;
+        flex-direction: column;
+    }
+    header nav ul{
+        gap:20px;
+    }
+    header nav h2{
+        margin-bottom:25px;
+    }
+    header .banner{
+        margin-top:25px;
+        flex-direction: column-reverse;
+    }
+    header .banner .banner-text{
+        width:100%;
+    }
+    /* ________Here is features style________ */
+    #features {
+        padding: 85px 0 85px 0;
+    }
+    .features-elements {
+        flex-direction: column;
+        padding:0;
+    }
+    #features .img-gallery{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+    #features .features-description {
+        width: 100%;
+    }
+    /* ________Here is love section________ */
+    #love {
+        padding-bottom: 0px;
+    }
+    #love .love-title {
+        width: 100%;
+    }
+    #love .love-elements{
+        flex-direction: column;
+    }
+    #love .love-content {
+        width: 100%;
+    }
+     #love .love-elements {
+        gap: 50px;
+    }
+    #love .experience {
+        border-radius: 0px;
+        left: 0px;
+        bottom: 80px;
+        width:100%;
+    }
+}
