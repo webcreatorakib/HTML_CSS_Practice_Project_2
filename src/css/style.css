@@ -44,6 +44,7 @@ ul{
     padding:20px 25px;
     border:none;
     width:180px;
+    cursor: pointer;
 }
 .container{
     max-width: 75%;
@@ -81,7 +82,39 @@ header .banner .banner-img img{
     width:100%;
     border-radius: 10px;
 }
-
+/* ________Here is features section___________ */
+#features{
+    padding:85px 0 130px 0;
+}
+.features-elements{
+    display: flex;
+    align-items: center;
+    padding:0 60px;
+    gap: 73px;;
+}
+#features .img-gallery{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    gap:24px;
+}
+#features .img-gallery img{
+    width:100%;
+    height: 100%;
+}
+#features .features-title{
+    width:70%;
+}
+#features .features-title span:nth-child(1){
+    color:#727272;
+    font-weight: 500;;
+}
+#features .features-title span:nth-child(2){
+    color:#FF900E;
+}
+#features .features-description{
+    width:90%
+}
 
 
 
@@ -108,6 +141,17 @@ header .banner .banner-img img{
     }
     header .banner .banner-text {
         width: 80%;
+    }
+    /* ________Here is features style________ */
+    #features {
+        padding: 85px 0 85px 0;
+    }
+    .features-elements {
+        flex-direction: column-reverse;
+    }
+    #features .img-gallery{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
     }
 }
 
@@ -144,4 +188,19 @@ header .banner .banner-img img{
     header .banner .banner-text{
         width:100%;
     }
+        /* ________Here is features style________ */
+        #features {
+            padding: 85px 0 85px 0;
+        }
+        .features-elements {
+            flex-direction: column;
+            padding:0;
+        }
+        #features .img-gallery{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+        }
+        #features .features-description {
+            width: 100%;
+        }
 }
